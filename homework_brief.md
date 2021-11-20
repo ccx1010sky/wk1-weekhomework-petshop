@@ -23,15 +23,3 @@ To unskip a test delete the following line in the pet_shop_test.py file:
 * **Red - Green - Refactor** - Your test is passing, awesome! But before you move on, is there anything you can do to make your code more efficient? Or more readable? Or just prettier? Can you reuse functions you have already written?
 * **Not all functions need to return something** - Sometimes we call a function and then test its _effects_, rather than test its _output_.
 
-## PDA Reminder:
-
-As part of this homework you are required to take screenshots of the following:
-
-- A dictionary in a program
-- A function that uses the dictionary
-- The result of the function running
-
-
-Submit your PDA evidence (screenshots, etc.) to Canvas
-
-PDA Reference: I.T 6
