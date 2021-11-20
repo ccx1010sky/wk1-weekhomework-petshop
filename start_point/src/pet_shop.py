@@ -37,17 +37,8 @@ def get_stock_count(pet_shop):
     return len(pet_shop["pets"])
 
 
-# ?
 # 8 ,9
 def get_pets_by_breed(pet_shop, br):
-
-    # below comment code was passing the test
-    # pet = []
-    # i = 0
-    # while pet_shop["pets"][i]["breed"] == br:
-    #     pet.append(pet_shop["pets"][i]["breed"])
-    #     i += 1
-
     pet = []
     for pets in pet_shop["pets"]:
         if pets["breed"] == br:
@@ -126,8 +117,8 @@ def customer_can_afford_pet(customer, new_pet):
 
 def sell_pet_to_customer(pet_shop, pet, customer):
 
-    pet["name"] == pet_shop["pet"]
-    
+
+
     if get_customer_pet_count(customer) == len(customer["pets"]):
         pass
 
