@@ -118,15 +118,23 @@ def customer_can_afford_pet(customer, new_pet):
 def sell_pet_to_customer(pet_shop, pet, customer):
 
 
+ 
+    # if get_customer_pet_count(customer) == len(customer["pets"]):
+    #     pass
 
-    if get_customer_pet_count(customer) == len(customer["pets"]):
-        pass
+    # elif get_pets_sold(pet_shop) == pet_shop["admin"]["pets_sold"]:
+    #     pass
 
-    elif get_pets_sold(pet_shop) == pet_shop["admin"]["pets_sold"]:
-        pass
+    # elif get_customer_cash(customer) == customer["cash"]:
+    #     pass
 
-    elif get_customer_cash(customer) == customer["cash"]:
-        pass
+    # elif get_total_cash(pet_shop) == pet_shop["admin"]["total_cash"]:
+    #     pass
 
-    elif get_total_cash(pet_shop) == pet_shop["admin"]["total_cash"]:
-        pass
+    # correct answer as follow:
+    if pet != None and customer_can_afford_pet(customer, pet):
+        remove_pet_by_name(pet_shop, pet["name"])
+        add_pet_to_customer(customer, pet)
+        remove_customer_cash(customer, pet["price"])
+        add_or_remove_cash(pet_shop, pet["price"])
+        increase_pets_sold(pet_shop, 1)
